@@ -19,14 +19,14 @@ import {
 import { Button } from '@/components/ui/button';
 import { LogOut, Settings, BookOpen, ChevronDown, Menu } from 'lucide-react';
 
-import logoUANE from '../assets/logo-UANE.svg'
+import logoUANE from '../assets/logo-UANE-Branco.svg'
 
 export function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
     <nav className="bg-[#1F6482] shadow-sm border-b border-b-[#1F6482]/10 h-16 md:h-14">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-[1440px] mx-auto px-3 md:px-4 lg:px-18">
         <div className="flex justify-between items-center h-16 md:h-14">
           {/* Logo */}
           <img src={logoUANE} alt="Logo UANE" className="h-6 w-auto" />
@@ -138,7 +138,7 @@ export function Navbar() {
 
       {/* Mobile Navigation Menu */}
       {mobileMenuOpen && (
-        <div className="lg:hidden bg-[#1F6482] border-t border-[#1F6482]/10 px-4 py-2">
+        <div className="lg:hidden bg-[#1F6482] border-t border-[#1F6482]/10 px-4 py-2 absolute">
           <ul className="flex flex-col space-y-2 mb-4">
             <li>
               <a
