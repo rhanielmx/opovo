@@ -6,8 +6,8 @@ Esta é uma API RESTful desenvolvida em **PHP puro** para gerenciamento de curso
 
 ## Tecnologias Utilizadas
 
-- **PHP** (sem frameworks)
-- **PostgreSQL** (compatível com Supabase)
+- **PHP**
+- **PostgreSQL** (Supabase)
 - **PDO** para conexão com banco de dados
 - Organização em camadas: `models`, `controllers`, `config`
 
@@ -27,7 +27,7 @@ Esta é uma API RESTful desenvolvida em **PHP puro** para gerenciamento de curso
 
 ### 1. Clone o repositório
 
-```bash
+```
 git clone https://github.com/rhanielmx/opovo.git
 cd opovo/backend
 ```
@@ -52,6 +52,7 @@ CREATE TABLE professors (
 CREATE TABLE courses (
   id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
   name VARCHAR(255) NOT NULL,
+  description TEXT NOT NULL,
   workload INTEGER NOT NULL, 
   price DECIMAL(10,2) NOT NULL,
   access_period INTEGER NOT NULL, -- em meses
