@@ -99,6 +99,9 @@ SUPABASE_PASSWORD=
 ```
 
 ### 4. Rode o servidor embutido do PHP
+```
+php -S localhost:8000
+```
 A API estará disponível em http://localhost:8000.
 
 ---
