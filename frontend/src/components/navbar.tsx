@@ -136,11 +136,11 @@ export function Navbar() {
 
       {/* Mobile Navigation Menu */}
       {mobileMenuOpen && (
-        <div className="lg:hidden bg-[#1F6482] border-t border-[#1F6482]/10 px-4 py-2 absolute">
+        <div className="lg:hidden bg-[#1F6482] border-t border-[#1F6482]/10 px-4 py-2 absolute z-50">
           <ul className="flex flex-col space-y-2 mb-4">
             <li>
               <a
-                href="#cursos"
+                href="/#cursos"
                 className="block text-white hover:bg-white/10 hover:text-[#17254D] px-3 py-2 rounded text-sm font-medium transition-colors duration-200"
                 onClick={() => setMobileMenuOpen(false)}
               >
@@ -149,7 +149,7 @@ export function Navbar() {
             </li>
             <li>
               <a
-                href="#professores"
+                href="/professores"
                 className="block text-white hover:bg-white/10 hover:text-[#17254D] px-3 py-2 rounded text-sm font-medium transition-colors duration-200"
                 onClick={() => setMobileMenuOpen(false)}
               >
@@ -158,7 +158,7 @@ export function Navbar() {
             </li>
             <li>
               <a
-                href="#sobre"
+                href="/sobre"
                 className="block text-white hover:bg-white/10 hover:text-[#17254D] px-3 py-2 rounded text-sm font-medium transition-colors duration-200"
                 onClick={() => setMobileMenuOpen(false)}
               >
