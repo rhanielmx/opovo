@@ -15,7 +15,7 @@ export function InformationAccordion({ title, items }: InformationAccordionProps
   console.log('items', items)
   return (
     <div className='max-w-[1440px] mx-auto px-3 py-6 md:px-18 md:pb-12'>
-      <h2 className='font-lg font-bold border-l-4 border-l-[#138E98] mb-6 pl-2'>{title}</h2>
+      <h2 className='text-lg font-bold border-l-4 border-l-[#138E98] mb-6 pl-2'>{title}</h2>
       <Accordion type="single" collapsible className="flex flex-col gap-4">
       {
         items?.map(item => {

@@ -1,8 +1,9 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Navbar } from './components/navbar'
 import { Home } from "./pages/Home.tsx";
 import { Professores } from "./pages/Professores.tsx";
+import { ProfessorDetail } from "./pages/ProfessorDetail.tsx";
 import { Sobre } from "./pages/Sobre.tsx";
-import { Navbar } from './components/navbar'
 
 import logoUANE from './assets/logo-UANE.png'
 import wppLogo from './assets/wpp-logo.svg'
@@ -16,6 +17,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/professores" element={<Professores />} />
+            <Route path="/professores/:id" element={<ProfessorDetail />} />
             <Route path="/sobre" element={<Sobre />} />
           </Routes>
         </div>
