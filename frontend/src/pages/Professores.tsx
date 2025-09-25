@@ -1,4 +1,5 @@
 import type { Course } from "@/components/courses/courses";
+import { ProfessoresSkeleton } from "@/components/professores-skeleton";
 import { env } from "@/env";
 import { useQuery } from "@tanstack/react-query";
 
@@ -28,7 +29,7 @@ export function Professores(){
     queryFn: fetchProfessors,
   });
 
-  if(isLoading) return <div>Loading...</div>
+  if(isLoading) return <ProfessoresSkeleton />
   if(error) return <div>Error: {error.message}</div>
 
   return(
@@ -50,7 +51,6 @@ export function Professores(){
             />
             <div className="flex flex-col justify-between p-4 gap-4">
               <h3 className="text-xl font-semibold text-white">{professor.name}</h3>
-              {/* <p className="text-gray-700 mb-4">{professor.description}</p> */}
               <span className="text-sm text-gray-300">{professor.formations}</span>
             </div>
           </div>

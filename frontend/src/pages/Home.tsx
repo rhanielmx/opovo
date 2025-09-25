@@ -1,4 +1,5 @@
 import { Banner } from '../components/banner'
+import { HomePageSkeleton } from '../components/home-page-skeleton'
 import { Courses } from '../components/courses/courses'
 import { InformationAccordion } from '../components/information-accordion'
 import { InformationCard } from '../components/information-card'
@@ -7,8 +8,6 @@ import { useEffect } from 'react'
 import { useSelectedCourse } from '../contexts/SelectedCourseContext'
 import { env } from '../env'
 import { ACCORDION_DATA } from '@/data'
-
-
 
 async function fetchCourses() {
   const response = await fetch(`${env.VITE_API_URL}/courses?include_details=true`);
@@ -30,7 +29,9 @@ export function Home() {
       setSelectedCourse(data[0])
   }, [data]);
 
-  if (isLoading) return <div>Loading...</div>;
+  if (isLoading) {
+    return <HomePageSkeleton />;
+  }
   if (error) return <div>Error: {error.message}</div>;
 
   return (

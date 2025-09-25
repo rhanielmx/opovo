@@ -3,6 +3,7 @@ import { useQuery } from "@tanstack/react-query";
 import { useParams } from "react-router-dom"
 import { type Professor } from "./Professores";
 import { ChevronRightIcon } from "lucide-react";
+import { ProfessorDetailSkeleton } from "@/components/professor-detail-skeleton";
 
 async function fetchProfessor(id: string) {
   const response = await fetch(`${env.VITE_API_URL}/professors/${id}/courses`);
@@ -22,7 +23,7 @@ export function ProfessorDetail() {
     enabled: !!id,
   });
 
-  if(isLoading) return <div>Loading...</div>
+  if(isLoading) return <ProfessorDetailSkeleton />
   if(error) return <div>Error: {error.message}</div>
 
   if(!data) return <div>Professor not found</div>
