@@ -207,23 +207,33 @@ O sistema utiliza as seguintes tabelas principais:
 
 Consulte o README do backend para o script SQL completo de criação das tabelas.
 
+
+
+
+---
+
+## 🚧 Planejamentos Futuros
+
+- 🔐 **Autenticação de Usuários**
+   - Implementação de login e cadastro para alunos e administradores
+   - Controle de acesso a conteúdos exclusivos e área do aluno
+
+- 🤖 **Chatbot Inteligente (RAG)**
+   - Chatbot alimentado por RAG (Retrieval-Augmented Generation) usando as informações dos cursos, professores e módulos
+   - Responde dúvidas de possíveis interessados e alunos diretamente no portal
+   - Integração com IA para respostas contextuais e automação de atendimento
+
+- 📑 **Detalhes Avançados de Cursos**
+   - Página dedicada para cada curso com informações detalhadas, módulos, professores, pré-requisitos e FAQ
+   - Possibilidade de inscrição direta pelo portal
+   - Seção de avaliações e depoimentos de alunos
+
+Sugestões e colaborações para novas funcionalidades são bem-vindas!
+
+---
+
 ## 📞 Contato
 
 **UANE** - Universidade Aberta do Nordeste
 - Website: [Portal UANE](https://opovo.rhanielmx.com.br)
 - Repositório: [github.com/rhanielmx/opovo](https://github.com/rhanielmx/opovo)
-
----
-
-## 📝 Changelog
-
-### v1.0.0
-- ✅ Sistema completo de cursos online
-- ✅ API RESTful em PHP
-- ✅ Frontend React com TypeScript
-- ✅ Design responsivo
-- ✅ Gestão completa de professores e módulos
-
----
-
-*Desenvolvido com ❤️ para a educação*
