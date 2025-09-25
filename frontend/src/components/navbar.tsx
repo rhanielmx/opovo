@@ -1,11 +1,9 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import {
   NavigationMenu,
-  NavigationMenuContent,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
-  NavigationMenuTrigger,
 } from '@/components/ui/navigation-menu';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import {
@@ -37,7 +35,7 @@ export function Navbar() {
               <NavigationMenuList className="space-x-2">
                 <NavigationMenuItem>
                   <NavigationMenuLink
-                    href="#cursos"
+                    href="/#cursos"
                     className="text-white hover:bg-white/10 hover:text-[#17254D] px-3 py-2 text-sm font-medium transition-colors duration-200"
                   >
                     Cursos
@@ -45,7 +43,7 @@ export function Navbar() {
                 </NavigationMenuItem>
                 <NavigationMenuItem>
                   <NavigationMenuLink
-                    href="#professores"
+                    href="/professores"
                     className="text-white hover:bg-white/10 hover:text-[#17254D] px-3 py-2 text-sm font-medium transition-colors duration-200"
                   >
                     Professores
@@ -53,7 +51,7 @@ export function Navbar() {
                 </NavigationMenuItem>
                 <NavigationMenuItem>
                   <NavigationMenuLink
-                    href="#sobre"
+                    href="/sobre"
                     className="text-white hover:bg-white/10 hover:text-[#17254D] px-3 py-2 text-sm font-medium transition-colors duration-200"
                   >
                     Sobre a UANE
